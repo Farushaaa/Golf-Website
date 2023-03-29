@@ -1,0 +1,267 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+}
+body {
+  cursor: none;
+}
+a {
+  cursor: none;
+}
+.hero {
+  height: 100vh;
+  width: 100%;
+  background-image: url(./assets/golf-slider-1.jpg);
+  background-size: cover;
+  background-position: center;
+
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 30px;
+    padding-left: 3%;
+    padding-right: 3%;
+    .nav-links {
+      li {
+        list-style-type: none;
+        display: inline-block;
+        padding: 10px 20px;
+        font-family: "Bebas Neue", cursive;
+
+        a {
+          text-decoration: none;
+          color: white;
+          font-size: 25px;
+          cursor: none;
+          &:hover {
+            color: #ffd873;
+            transition: all 0.4s ease;
+          }
+        }
+      }
+    }
+  }
+}
+.hero_text {
+  position: absolute;
+  top: 20%;
+  left: 36%;
+  h2 {
+    color: white;
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 80px;
+    font-weight: 400;
+    margin-bottom: 1vh;
+    span {
+      color: #ffd873;
+    }
+  }
+  p {
+    color: white;
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 400;
+    font-size: 35px;
+    margin-bottom: 5vh;
+  }
+  .hero_button {
+    background-color: white;
+    width: 180px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    h3 {
+      color: black;
+      text-align: center;
+      font-family: "Bebas Neue", cursive;
+      font-size: 20px;
+    }
+  }
+  .hero_button:hover {
+    background-color: #ffd873;
+    transition: all 0.4s ease;
+  }
+}
+
+.description_container {
+  height: 100vh;
+  width: 100%;
+  background-image: url(./assets/golf-slider-2.jpg);
+  background-size: cover;
+  background-position: center;
+  padding-top: 15vh;
+  .description_text {
+    color: white;
+    padding-left: 3%;
+    h1 {
+      font-family: "Bebas Neue", cursive;
+      font-size: 50px;
+      margin-bottom: 2vh;
+      span {
+        color: #ffd873;
+      }
+    }
+    h2 {
+      font-family: "Bebas Neue", cursive;
+      font-size: 35px;
+      margin-bottom: 3vh;
+    }
+    .description_paragraphs {
+      width: 600px;
+      p {
+        font-family: "Barlow Condensed", sans-serif;
+        font-size: 22px;
+        margin-bottom: 3vh;
+      }
+    }
+  }
+}
+
+.videoWrapper {
+  height: 100vh;
+  width: 100%;
+  background-image: url(./assets/golf-slider-3.jpg);
+  background-size: cover;
+  background-position: center;
+  .video_container {
+    padding-top: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    color: white;
+    padding-right: 3%;
+    .video_text {
+      width: 600px;
+      padding-bottom: 4vh;
+      margin-right: 5vh;
+      p {
+        font-family: "Barlow Condensed", sans-serif;
+        margin-bottom: 2vh;
+        font-size: 25px;
+        span {
+          color: #ffd873;
+        }
+      }
+    }
+  }
+}
+.champion_profile {
+  display: flex;
+  justify-content: space-between;
+  background: black;
+  color: white;
+
+  .champion_description {
+    padding-left: 10%;
+    width: 750px;
+    h1,
+    h2,
+    h3 {
+      font-family: "Bebas Neue", cursive;
+      padding-bottom: 1vh;
+    }
+    h1 {
+      font-size: 50px;
+      span {
+        color: #ffd873;
+      }
+    }
+    h2 {
+      font-size: 40px;
+    }
+    h3 {
+      font-size: 30px;
+    }
+    p {
+      font-family: "Barlow Condensed", sans-serif;
+      font-size: 20px;
+    }
+  }
+  .champion_photo {
+    padding-right: 10%;
+  }
+}
+.players_photos {
+  padding-top: 10vh;
+  background: rgb(0, 0, 0);
+  height: 100vh;
+  width: 100%;
+  .players_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .player {
+      padding: 2vh;
+      transition: all 0.4s ease;
+      img {
+        width: 280px;
+        height: 350px;
+        object-fit: cover;
+      }
+    }
+    .player:hover {
+      transform: scale(1.2);
+    }
+  }
+  .players_description {
+    padding-top: 2vh;
+    h1 {
+      color: #ffd873;
+      font-family: "Barlow Condensed", sans-serif;
+      text-align: center;
+      font-size: 40px;
+    }
+  }
+}
+
+.footer {
+  background: black;
+  height: 40vh;
+  width: 100%;
+  .companies {
+    color: white;
+    font-family: "Barlow Condensed", sans-serif;
+    img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 8%;
+    }
+    p {
+      text-align: center;
+      padding-top: 3vh;
+      span {
+        color: #ffd873;
+      }
+    }
+    .contact_icons {
+      padding-top: 10vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      svg {
+        margin-left: 2vh;
+      }
+    }
+  }
+}
+.cursor {
+  width: 2rem;
+  height: 2rem;
+  border: 2px solid white;
+  border-radius: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  transition: all 0.3s ease;
+  transition-property: background, transform;
+  transform-origin: 100% 100%;
+  z-index: 10;
+}
+.link-grow {
+  transform: scale(1.7);
+}
